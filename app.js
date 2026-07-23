@@ -31,3 +31,16 @@ console.log(printMsg("The Conjuring"));
 movies.forEach(function (movie) {
   console.log('this is the movie ' + movie); 
 });
+
+// sum will be undefined
+const numsToSum = [2, 4, 6];
+let sum = 0 ;
+
+numsToSum.forEach((num) => {
+  sum = sum + num;
+  // sum will not be retained between iterations and will not 
+  // be available outside of the callback function
+});
+
+console.log(sum);
+// sum will be 12
