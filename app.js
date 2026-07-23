@@ -54,3 +54,24 @@ for (let book of books) {
 const lastMovieAt = movies.at(-1);  
 
 console.log(lastMovieAt);
+
+//---------------------------------------------------------------------------------------------------------------------
+
+const music = {};
+console.log(typeof music); // 'object'
+
+const music2 = {
+  currentTrack: 'Just Ken',
+  volume: 70, // <-----
+};
+
+music.currentPlaylist = ['Just Ken', 'Hey Blondie', 'What Was I Made For', 'Dance The Night'];
+console.log(music.currentPlaylist);
+ const music3 = {
+  currenttrack:'Just Ken',
+  currentPlaylist:['Just Ken', 'Hey Blondie', 'What Was I Made For', 'Dance The Night'],
+ volume:70,};
+ music.myPlaylist=['idk','idkk','gimmiename']
+console.log(music.myPlaylist);
+delete music.myPlaylist;
+console.log(music);
