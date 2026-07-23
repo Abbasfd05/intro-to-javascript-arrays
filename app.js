@@ -44,3 +44,13 @@ numsToSum.forEach((num) => {
 
 console.log(sum);
 // sum will be 12
+const books= ["The shining", "Pride and Prejudice"];
+console.log(books);
+books[1]="Dune";
+for (let book of books) {
+  console.log(book);
+}
+// selects last element of the array
+const lastMovieAt = movies.at(-1);  
+
+console.log(lastMovieAt);
